@@ -5,6 +5,7 @@ import java.util.Map;
 /**
  * Created by Tong on 12.03.
  * Chess > Board entity
+ * 棋盘
  */
 
 

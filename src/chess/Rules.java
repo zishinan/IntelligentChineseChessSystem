@@ -5,6 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by Tong on 12.15.
  * Define moving rules of pieces in the board.
+ * 走棋规则
  */
 public class Rules {
 
@@ -36,6 +37,10 @@ public class Rules {
         }
     }
 
+    /**
+     * 马
+     * @return
+     */
     private static ArrayList<int[]> mRules() {
         ArrayList<int[]> moves = new ArrayList<int[]>();
         int[][] target = new int[][]{{1, -2}, {2, -1}, {2, 1}, {1, 2}, {-1, 2}, {-2, 1}, {-2, -1}, {-1, -2}};
@@ -52,6 +57,10 @@ public class Rules {
         return moves;
     }
 
+    /**
+     * 车
+     * @return
+     */
     private static ArrayList<int[]> jRules() {
         ArrayList<int[]> moves = new ArrayList<int[]>();
         int[] yOffsets = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
@@ -91,6 +100,10 @@ public class Rules {
         return moves;
     }
 
+    /**
+     * 炮
+     * @return
+     */
     private static ArrayList<int[]> pRules() {
         ArrayList<int[]> moves = new ArrayList<int[]>();
         int[] yOffsets = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
